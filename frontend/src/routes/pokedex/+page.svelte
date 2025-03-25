@@ -23,12 +23,16 @@
   // Función para abrir el popup y obtener la información detallada
   async function openPopup(pokemon) {
     loading = true;
+    console.log("Cargando datos de:", pokemon.name);
+
     try {
       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`);
       selectedPokemon = await res.json();
+      console.log("Datos cargados:", selectedPokemon);
     } catch (error) {
       console.error("Error al cargar los datos del Pokémon:", error);
     }
+
     loading = false;
   }
 
@@ -37,6 +41,7 @@
     selectedPokemon = null;
   }
 </script>
+
 
 <main class="bg-gray-900 text-gray-200 min-h-screen p-2">
     <div class="flex">
