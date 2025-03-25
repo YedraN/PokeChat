@@ -1,7 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import PokemonPopup from '../../components/PokemonPopup.svelte';
-
+  
   let pokemons = [];
   let selectedPokemon = null;
   let loading = false;
@@ -19,27 +18,6 @@
       console.error("Error al cargar la Pokédex:", error);
     }
   });
-
-  // Función para abrir el popup y obtener la información detallada
-  async function openPopup(pokemon) {
-    loading = true;
-    console.log("Cargando datos de:", pokemon.name);
-
-    try {
-      const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`);
-      selectedPokemon = await res.json();
-      console.log("Datos cargados:", selectedPokemon);
-    } catch (error) {
-      console.error("Error al cargar los datos del Pokémon:", error);
-    }
-
-    loading = false;
-  }
-
-  // Cerrar el popup
-  function closePopup() {
-    selectedPokemon = null;
-  }
 </script>
 
 
@@ -69,12 +47,4 @@
           </div>
         {/each}
     </div>
-
-    {#if loading}
-        <p class="text-center text-xl mt-6">Cargando...</p>
-    {/if}
-
-    {#if selectedPokemon}
-        <PokemonPopup pokemon={selectedPokemon} closePopup={closePopup} />
-    {/if}
 </main>
