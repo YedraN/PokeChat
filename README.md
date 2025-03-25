@@ -64,4 +64,4 @@ Los estilos del frontend están basados en TailwindCSS con una escala de colores
 - Añadir soporte de voz para el chatbot.
 
 ## Autor
-Desarrollado por [Tu Nombre].
+Desarrollado por Juanjo Yedra.
