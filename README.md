@@ -11,14 +11,14 @@ Este proyecto es una aplicación web que permite buscar información de Pokémon
 
 ### 1. Configurar el backend (Flask)
 #### Requisitos previos
-- Python 3 instalado
+- Python instalado
 - `pip` para instalar dependencias
 
 #### Pasos
 1. Clonar el repositorio y entrar en la carpeta del backend:
    ```bash
-   git clone https://github.com/tu-repo/pokemon-chatbot.git
-   cd pokemon-chatbot/backend
+   git clone https://github.com/YedraN/PokeChat.git
+   cd PokeChat/backend
    ```
 2. Instalar las dependencias:
    ```bash
@@ -61,7 +61,6 @@ Los estilos del frontend están basados en TailwindCSS con una escala de colores
 - Agregar estadísticas de los Pokémon.
 - Implementar búsqueda por nombre.
 - Mejorar la interfaz con animaciones.
-- Añadir soporte de voz para el chatbot.
 
 ## Autor
 Desarrollado por Juanjo Yedra.
