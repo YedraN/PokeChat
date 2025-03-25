@@ -34,8 +34,8 @@
         <nav class="flex justify-end w-[50%]">
             <ul class="flex gap-4">
                 <li class="text-lg hover:font-semibold hover:text-xl duration-200"><a href="/pokedex">Pokedex</a></li>
-                <li class="text-lg hover:font-semibold hover:text-xl duration-200"><a href="/about">Sobre mi</a></li>
-                <li class="text-lg hover:font-semibold hover:text-xl duration-200"><a href="/contact">Contacto</a></li>
+                <li class="text-lg hover:font-semibold hover:text-xl duration-200"><a href="/">Sobre mi</a></li>
+                <li class="text-lg hover:font-semibold hover:text-xl duration-200"><a href="/">Contacto</a></li>
             </ul>
         </nav>
     </div>
