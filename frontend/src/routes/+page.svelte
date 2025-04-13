@@ -1,9 +1,11 @@
 <script>
   import { onMount } from 'svelte';
+  import { animate } from "animejs";
   let pokemonId = '';
   let pokemon = null;
   let error = '';
 
+  // Funcion para peticiones a la pokeapi
   async function fetchPokemon() {
     if (!pokemonId) {
       error = 'Por favor, introduce un número de Pokédex';
