@@ -3,7 +3,7 @@ import requests
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Permite solicitudes desde el frontend en SvelteKit
+CORS(app)
 
 POKEAPI_URL = "https://pokeapi.co/api/v2/pokemon/"
 
